@@ -1,130 +1,209 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Auto Peças Importados</title>
-    <style>
-        /* Estilos CSS para a imagem */
-        img {
-            width: 300px; /* Largura da imagem */
-            height: 200px; /* Altura da imagem */
-            border: 2px solid #333; /* Borda da imagem */
-            border-radius: 8px; /* Borda arredondada */
-        }
-    </style>
+  <title>Otorrinolaringologista</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+  <script type="application/ld+json">{"@context":"https://schema.org","@type":"Physician","name":"Otorrinolaringologista Dra Christiane Lopes","image":"https://drachrislopesotorrino.com/wp-content/webp-express/webp-images/uploads/2023/11/Logo.png.webp","@id":"https://drachrislopesotorrino.com/","url":"https://drachrislopesotorrino.com/","telephone":"51 2313-7535","priceRange":"$$","medicalSpecialty":"Otorhinolaryngology","description":"Otorrinolaringologista com experiência em tratamento de problemas de ouvido, nariz e garganta. Possui registro CRM/RS 42213 e RQE 29848.","address":{"@type":"PostalAddress","streetAddress":"Av. Getúlio Vargas, 4831 - 3º Andar Sala 306 - Centro","addressLocality":"Canoas","addressRegion":"RS","postalCode":"92010011","addressCountry":"BR"},"geo":{"@type":"GeoCoordinates","latitude":-29.9239482,"longitude":-51.1771258},"openingHoursSpecification":[{"@type":"OpeningHoursSpecification","dayOfWeek":["Monday","Tuesday","Wednesday","Thursday","Friday"],"opens":"08:00","closes":"20:00"},{"@type":"OpeningHoursSpecification","dayOfWeek":"Saturday","opens":"09:00","closes":"12:00"}],"sameAs":["https://twitter.com/otorrinocanoas","http://www.youtube.com/@Otorrinolaringologista-Canoas","https://br.pinterest.com/otorrinolaringologistars","https://www.doctoralia.com.br/christiane-lopes/otorrino/canoas","https://www.tumblr.com/otorrinolaringologista-canoas"],"aggregateRating":{"@type":"AggregateRating","ratingValue":"5","reviewCount":"36"},"review":[{"@type":"Review","author":"Daniel Antunes","reviewBody":"A Dra Christiane sempre me acompanhou nas minhas crises de amidalite. Optamos por fazer a cirurgia pelo elevado número de crises. Ela realizou minha cirurgia, e foi bem tranquila. A profissional sempre demonstrou excelente atendimento, empatia e ótima experiência na área. Recomendo muito!","reviewRating":{"@type":"Rating","ratingValue":"5"}},{"@type":"Review","author":"Daniel Campelo","reviewBody":"Médica muito gente boa e competente. Sempre tive problemas com rinite e tinha que ficar usando descongestionante nasal para conseguir dormir direito no inverno por causa do frio. Com o tratamento que ela passou, voltei, finalmente, a ter uma noite de sono decente.","reviewRating":{"@type":"Rating","ratingValue":"5"}},{"@type":"Review","author":"Joyce Ribeiro Moura Brasil Arnaut Joyce","reviewBody":"Excelente! Como profissional e como pessoa! Competente, dedicada e atenciosa! Recomendo de olhos fechados!","reviewRating":{"@type":"Rating","ratingValue":"5"}},{"@type":"Review","author":"Beatriz Alves","reviewBody":"Uma profissional incrível, extremamente competente, com uma formação de excelência!!!! Recomendo mil vezes…","reviewRating":{"@type":"Rating","ratingValue":"5"}},{"@type":"Review","author":"Nikollas Wendling Balen","reviewBody":"Tenho só elogios a Dra Christiane! Consulta humanizada, esclarecedora e muito resolutiva! Consultório agradável e espaçoso. Recomendo e com certeza voltarei!","reviewRating":{"@type":"Rating","ratingValue":"5"}},{"@type":"Review","author":"Gustavo Bilonia","reviewBody":"Dra. Extremamente atenciosa, educada e excelente no que faz. Atendimento de primeira qualidade, SUPER RECOMENDO!!","reviewRating":{"@type":"Rating","ratingValue":"5"}},{"@type":"Review","author":"Luciele Monzon","reviewBody":"Ótimo atendimento recomendo tanto a recepção quanto a médica excelente profissional. Nota 10","reviewRating":{"@type":"Rating","ratingValue":"5"}},{"@type":"Review","author":"Marileia","reviewBody":"Ótima profissional! Saí da consulta muito satisfeita e com uma explicação técnica maravilhosa sobre o que estava realmente acontecendo comigo.","reviewRating":{"@type":"Rating","ratingValue":"5"}},{"@type":"Review","author":"Rita Pereira Pires","reviewBody":"Doutora Christiane Lopes uma excelente profissional e um ser humano fantástico...obrigada por tudo...🤩","reviewRating":{"@type":"Rating","ratingValue":"5"}},{"@type":"Review","author":"Daniel Aguiar","reviewBody":"Ótima profissional, altamente recomendada. Sempre simpática e disposta a tirar nossas dúvidas, um diferencial e tanto nos dias de hoje. Voltarei mais vezes e certamente indicarei!","reviewRating":{"@type":"Rating","ratingValue":"5"}},{"@type":"Review","author":"Tais Grossi","reviewBody":"Médica atenciosa, pontual e acolhedora!!!! Recomendo fortemente.","reviewRating":{"@type":"Rating","ratingValue":"5"}},{"@type":"Review","author":"Juk Andrade","reviewBody":"EXCELENTE profissional com amplo conhecimento e experiência na área. Além do atendimento super diferenciado com muita atenção ao paciente. Recomendo a todos sem dúvida!","reviewRating":{"@type":"Rating","ratingValue":"5"}}]}</script>
+  <style>
+    .container {
+      display: flex;
+      justify-content: space-between;
+      max-width: 1200px;
+      margin: 0 auto;
+    }
+
+    /* Estilo para a coluna de texto à esquerda */
+    .text-column-left {
+      width: 48%;
+    }
+
+    /* Estilo para a coluna de texto à direita */
+    .text-column-right {
+      width: 48%;
+    }
+
+    /* Estilo para a coluna de imagem à esquerda */
+    .image-column-left {
+      width: 48%;
+    }
+
+    /* Estilo para a coluna de imagem à direita */
+    .image-column-right {
+      width: 48%;
+    }
+
+    div.container-fluid.p-5.text-white.text-center {
+      background-color: #5F896C;
+    }
+
+    div.container-fluid.p-5.text-black.text-center {
+      font-size: 25px;
+      text-decoration: none;
+    }
+
+    * {
+      box-sizing: border-box;
+    }
+
+    /* Create two equal columns that float next to each other */
+    .column {
+      flex: 10;
+      text-align: center;
+      padding: 50px;
+      height: 600px;
+    }
+
+    /* Clear floats after the columns */
+    .row:after {
+      content: "";
+      display: table;
+      clear: both;
+    }
+  </style>
 </head>
+
 <body>
 
-<center><h1>Auto Peças Importados Peça Pra Já</h1>
+  <div class="container-fluid p-5 text-white text-center">
+    <h1>palavra chave</h1>
+    <p>nome da ficha</p>
+    <p>texto</p>
+  </div>
 
-<h2>Auto Peças Importados</h1>
-  <p>Bem-vindo à Auto Peças Importados Peça Pra Já, o seu destino confiável para peças de carros importados de alta qualidade. Com uma ampla seleção de componentes para uma variedade de marcas e modelos, nos dedicamos a fornecer apenas o melhor para o seu veículo. Desde peças raras até os itens mais procurados, nossa missão é assegurar que você encontre exatamente o que precisa com a garantia de qualidade e durabilidade.</p>
+  <div class="container-fluid p-5 text-black text-center">
+    
+    <div class="container">
+        <div class="image-column-left">
+          <img src="link da imagem" alt="Sua Imagem" width="580" height="500">
+        </div>
+        <div class="text-column-right">
+          <h2 style="font-size: 28px;"><a href="https://maps.google.com/maps?cid=11682291749944568516">Auto Peças Importados</a>Peça Pra Já</h2>
+          <br>
+          <p style="font-size: 16px;">texto</p>
+        </div>
+      </div>
+    
+  </div>
+<br><br><br></br>
+  <div class="container">
+    <div class="text-column-left">
+        <h2>Título</h2>
+        <p style="font-size: 16px;">Texto</p>
+    </div>
+    <div class="image-column-right">
+      <img src="link da imagem" alt="Sua Imagem" width="580" height="500">
+    </div>
+  </div>
+<br><br><br></br>
+ <div class="container">
+  <div class="image-column-left">
+    <img src="link da imagem" alt="Sua Imagem" width="580" height="500">
+  </div>
+  <div class="text-column-right">
+    <h2>Título</h2>
+          <p style="font-size: 16px;">Texto</p>
+  </div>
+</div>
+<br><br><br></br>
+  <div class="container">
+    <div class="text-column-left">
+        <h2>Título</h2>
+        <p style="font-size: 16px;">Texto</p>
+    </div>
+    <div class="image-column-right">
+      <img src="link da imagem" alt="Sua Imagem" width="580" height="500">
+    </div>
+  </div>
+<br><br><br></br>
+  <div class="container-fluid p-5 text-black text-center">
+    
+    <div class="container">
+        <div class="image-column-left">
+          <img src="link da imagem" alt="Sua Imagem" width="580" height="500">
+        </div>
+        <div class="text-column-right">
+          <h2>Título</h2>
+          <p style="font-size: 16px;">Texto</p>
+        </div>
+      </div>
+<br><br><br></br>
+  <div class="container mt-5">
+    <div class="mt-4 p-5 text-black rounded">
+      <div style="display: flex; justify-content: space-between;">
 
-  <h2>Sobre Nós</h2>
-  <p>Nossa Jornada: Excelência em Auto Peças Importadas</p>
+        <div style="width: 48%;" class="text-column-left">
+          <b>Auto Peças Importados Peça Pra Já</b>
+          <br></br>
+          <b>Estrada Adhemar Bebiano, 275 - Loja K - Del Castilho, Rio de Janeiro - RJ, 21051-071</b>
+          <br></br>
+          <b>(51) 2313-7535</b>
+          <br></br>
+          <b><a href="https://auto-pecas-de-importados.negocio.site/">https://auto-pecas-de-importados.negocio.site/</a><br></b>
+          <br><b>Horário de Funcionamento:</b>
+          <br><p>Segunda a Sexta 08:00 as 20:00</p>
+          
+        </div>
 
-  <img src="https://autopecasimportados.github.io/auto-pecas-importados1.jpg" />
-  
-  <p>A Auto Peças Importados Peça Pra Já nasceu da paixão por carros e da necessidade de oferecer no mercado nacional peças importadas de qualidade superior. Ao longo dos anos, construímos uma reputação sólida baseada na confiança, conhecimento técnico e um catálogo de produtos que atende desde veículos clássicos até os mais modernos. Nossa equipe de especialistas está sempre pronta para orientar e fornecer o melhor serviço, garantindo a satisfação total de nossos clientes.</p>
+        <div style="width: 48%;" class="image-column-right">
+          <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3676.02918185604!2d-43.26884182469062!3d-22.87538037927724!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x997d39a1949ed3%3A0xa21fd6737dec2ac4!2sAuto%20Pe%C3%A7as%20Importados%20Pe%C3%A7a%20Pra%20J%C3%A1!5e0!3m2!1spt-BR!2sbr!4v1707416099244!5m2!1spt-BR!2sbr" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+  <br><br><br></br>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+<a href=""></a>
+<br>
+<a href=""></a>
+<br>
+<a href=""></a>
+<br>
+<a href=""></a>
+<br>
+<a href=""></a>
+<br>
+<a href=""></a>
   <br></br>
-  <h2>Nossos Produtos</h2>
-  <p>Variedade e Qualidade sem Igual</p>
-
-  <img src="https://autopecasimportados.github.io/auto-pecas-importados2.jpg" />
   
-  <p>Em nossa loja, você encontrará uma extensa gama de peças importadas, incluindo sistemas de freio, componentes de motor, suspensão, elétrica, e muito mais. Cada produto é cuidadosamente selecionado e testado para atender aos mais altos padrões de qualidade e segurança. Entendemos a importância de usar peças confiáveis, e por isso, trabalhamos apenas com fornecedores renomados e peças certificadas.</p>
-  <br></br>
-  <h2>Por Que Escolher Nossas Peças</h2>
-  <p> Compromisso com a Excelência e Satisfação do Cliente </p>
+<center><div class="row">
+  <div class="column">
+    <iframe src="" width="480" height="480"></iframe>
+  </div>
+  <div class="column" >
+    <iframe src="" width="480" height="480"></iframe>
+  </div>
+<div class="row">
+    <div class="column">
+        <iframe src="" width="480" height="480"></iframe>
+    </div>
+    <div class="column">
+        <iframe src="" width="480" height="480"></iframe>
+    </div>
+<div class="row">
+      <div class="column">
+        <iframe src="" width="480" height="480"></iframe>
+      </div>
+      <div class="column">
+        <iframe src="" width="480" height="480"></iframe>
+      </div>
+<div class="row">
+<div class="column">
+    <iframe src="" width="480" height="480"></iframe>
+</div>
+<div class="column">
+    <iframe src="" width="480" height="480"></iframe>
+</div>
+<div class="row">
+<div class="column">
+    <iframe src="" width="480" height="480"></iframe>
+</div>
+</div>
 
-  <img src="https://autopecasimportados.github.io/auto-pecas-importados3.png" />
-  
-  <P>Escolher a Auto Peças Importados Peça Pra Já significa optar por um serviço que valoriza a qualidade acima de tudo. Nossos clientes confiam em nós para fornecer peças que melhoram o desempenho e a segurança dos seus veículos. Oferecemos garantia em todos os nossos produtos, uma política de devolução flexível, e um atendimento ao cliente que está sempre pronto para ajudar. Além disso, nosso compromisso com preços competitivos assegura que você obtenha o melhor valor pelo seu investimento.</P>
-  <br></br>
-  <h2>Depoimentos de Clientes</h2>
-  <p>Confiança Refletida em Cada Depoimento</p>
-
-  <img src="https://autopecasimportados.github.io/auto-pecas-importados4.jpg" />
-  
-  <p>Não há melhor prova de nossa qualidade e serviço do que as palavras de nossos clientes. Aqui estão alguns depoimentos de proprietários de veículos que escolheram a Auto Peças Importados Peça Pra Já: [Inserir depoimentos reais]. Essas experiências reforçam nosso compromisso em manter os mais altos padrões em tudo o que fazemos.</p>
-  <br></br>
-  <h2>Como Funciona</h2>
-  <p>Seu Pedido, Nossa Prioridade</p>
-
-  <img src="https://autopecasimportados.github.io/auto-pecas-importados5.jpg" />
-  
-  <p>Comprar na Auto Peças Importados Peça Pra Já é um processo simples e direto. Primeiro, você pode pesquisar em nosso catálogo online ou entrar em contato para consultas específicas. Após escolher a peça, o processo de compra é rápido e seguro. Oferecemos diversas opções de pagamento e uma logística eficiente para garantir que sua peça chegue rapidamente e em perfeito estado.</p>
-  <br></br>
-  <h2>Blog e Dicas</h2>
-
-  <img src="https://autopecasimportados.github.io/auto-pecas-importados6.jpg" />
-  
-  <p>Mantenha-se Informado com Nossos Especialistas</p>
-  <p>Visite nosso blog para artigos, guias e dicas sobre manutenção de veículos, novidades do setor de auto peças.</p>
-
-  
-  <br></br>
-<center>
-<h2>Auto Peças Importados</h2>
-<br></br>
-    <h2><a href="https://auto-pecas-de-importados.negocio.site/">https://auto-pecas-de-importados.negocio.site/</a></h2>
-    <h2><a href="https://maps.google.com/maps?cid=11682291749944568516">https://maps.google.com/maps?cid=11682291749944568516</a></h2>
-<a href="https://drive.google.com/drive/folders/1i74GVZX10hR1pvPEq0SZshqwjt1KR6kK?usp=sharing">https://drive.google.com/drive/folders/1i74GVZX10hR1pvPEq0SZshqwjt1KR6kK?usp=sharing</a>
-<br></br>
-<a href="https://docs.google.com/document/d/1IolqiCLXbCdBE1T-pyJLZ1jpO9c5QS3a74R4uo6d4BU/edit?usp=sharing">https://docs.google.com/document/d/1IolqiCLXbCdBE1T-pyJLZ1jpO9c5QS3a74R4uo6d4BU/edit?usp=sharing</a>
-<br></br>
-<a href="https://docs.google.com/presentation/d/1J80vw1NT62wyEBagSHN76osgjlxUwDBblFsM6rzqxWM/edit?usp=sharing">https://docs.google.com/presentation/d/1J80vw1NT62wyEBagSHN76osgjlxUwDBblFsM6rzqxWM/edit?usp=sharing</a>
-<br></br>
-<a href="https://docs.google.com/drawings/d/1Q0uP4p3mwApOpM3SOdYSeebkRxGb5_PDJDHU6bjjQyk/edit?usp=sharing">https://docs.google.com/drawings/d/1Q0uP4p3mwApOpM3SOdYSeebkRxGb5_PDJDHU6bjjQyk/edit?usp=sharing</a>
-<br></br>
-<a href="https://docs.google.com/spreadsheets/d/1TS9XLA8ywwUYjSphKTvVrvVtIjRgCIsxRJda-1-jjQw/edit?usp=sharing">https://docs.google.com/spreadsheets/d/1TS9XLA8ywwUYjSphKTvVrvVtIjRgCIsxRJda-1-jjQw/edit?usp=sharing</a>
-<br></br>
-<a href="https://jamboard.google.com/d/1nAQXbrTPhAgVe_bHespFq6OQYkUQywvF19L_dkYYxOg/edit?usp=sharing">https://jamboard.google.com/d/1nAQXbrTPhAgVe_bHespFq6OQYkUQywvF19L_dkYYxOg/edit?usp=sharing</a>
-<br></br>
-<a href="https://docs.google.com/forms/d/e/1FAIpQLSfJOXjVLWb73r192HNwXSLryINU9V6qhf71dv9UuWk8X12Cyw/viewform?usp=sharing">https://docs.google.com/forms/d/e/1FAIpQLSfJOXjVLWb73r192HNwXSLryINU9V6qhf71dv9UuWk8X12Cyw/viewform?usp=sharing</a>
-<br></br>
-<a href="https://docs.google.com/forms/d/e/1FAIpQLSfJOXjVLWb73r192HNwXSLryINU9V6qhf71dv9UuWk8X12Cyw/viewform?usp=sf_link">https://docs.google.com/forms/d/e/1FAIpQLSfJOXjVLWb73r192HNwXSLryINU9V6qhf71dv9UuWk8X12Cyw/viewform?usp=sf_link</a>
-<br></br>
-<a href="https://lookerstudio.google.com/s/mnXuOzGxlzQ">https://lookerstudio.google.com/s/mnXuOzGxlzQ</a>
-<br></br>
-<a href="https://classroom.google.com/c/NjM3MDA0NzIzNDA3/a/NjM3MDA1NTg1ODY4/details">https://classroom.google.com/c/NjM3MDA0NzIzNDA3/a/NjM3MDA1NTg1ODY4/details</a>
-<br></br>
-<a href="https://www.google.com/maps/d/edit?mid=1tUzcl9ETNmQM4G3Klbob6EGUzngsIXM&usp=sharing">https://www.google.com/maps/d/edit?mid=1tUzcl9ETNmQM4G3Klbob6EGUzngsIXM&usp=sharing</a>
-<br></br>
-<a href="https://www.google.com/maps/d/edit?mid=14faSDgFsJ9hC2N8a_n90TbYd_o4wwm0&usp=sharing">https://www.google.com/maps/d/edit?mid=14faSDgFsJ9hC2N8a_n90TbYd_o4wwm0&usp=sharing</a>
-<br></br>
-<a href="https://www.google.com/maps/d/u/0/edit?mid=1VSHommJY6ow06Jf8fZdEcC16iMT-DFM&usp=sharing">https://www.google.com/maps/d/u/0/edit?mid=1VSHommJY6ow06Jf8fZdEcC16iMT-DFM&usp=sharing</a>
-<br></br>
-<a href="https://www.google.com/maps/d/edit?mid=1wqrypDXPuBo8vhI7Itxs1s_29cfXNzQ&usp=sharing">https://www.google.com/maps/d/edit?mid=1wqrypDXPuBo8vhI7Itxs1s_29cfXNzQ&usp=sharing</a>
-<br></br>
-<a href="https://www.google.com/maps/d/edit?mid=1bQqjKp7lphZattgAqrRmRn-65a7q7XY&usp=sharing">https://www.google.com/maps/d/edit?mid=1bQqjKp7lphZattgAqrRmRn-65a7q7XY&usp=sharing</a>
-<br></br>
-<a href="https://www.google.com/maps/d/edit?mid=1EmV-tOz3OabViQxi4-G8S271oOgiTQ4&usp=sharing">https://www.google.com/maps/d/edit?mid=1EmV-tOz3OabViQxi4-G8S271oOgiTQ4&usp=sharing</a>
-<br></br>
-<a href="https://www.google.com/maps/d/edit?mid=1dVp4u9XStQnTIgZxrB0_yzgQRTS-lZU&usp=sharing">https://www.google.com/maps/d/edit?mid=1dVp4u9XStQnTIgZxrB0_yzgQRTS-lZU&usp=sharing</a>
-<br></br>
-<a href="https://www.google.com/maps/d/edit?mid=1jNgEauyt0AzVuYe39891ELq9wua9tWM&usp=sharing">https://www.google.com/maps/d/edit?mid=1jNgEauyt0AzVuYe39891ELq9wua9tWM&usp=sharing</a>
-<br></br>
-<a href="https://www.google.com/maps/d/edit?mid=1Rk5aX9eHC7Hk4lBo-BLcZlptHILNb4E&usp=sharing">https://www.google.com/maps/d/edit?mid=1Rk5aX9eHC7Hk4lBo-BLcZlptHILNb4E&usp=sharing</a>
-<br></br>
-<a href="https://www.linkedin.com/in/autopecas-importados/">https://www.linkedin.com/in/autopecas-importados/</a>
-<br></br>
-<a href="https://twitter.com/autopecasimpor">https://twitter.com/autopecasimpor</a>
-<br></br>
-<a href="https://br.pinterest.com/autopecasimportados/">https://br.pinterest.com/autopecasimportados/</a>
-<br></br>
-<a href="https://www.tumblr.com/autopecasimportados">https://www.tumblr.com/autopecasimportados</a>
-<br></br>
-<a href="https://autopecasimport.livejournal.com/profile">https://autopecasimport.livejournal.com/profile</a>
-<br></br>
-<a href="https://www.reddit.com/user/autopecasimportados/">https://www.reddit.com/user/autopecasimportados/</a>
-<br></br>
-<a href="https://www.wattpad.com/user/AutoPecasImportados">https://www.wattpad.com/user/AutoPecasImportados</a>
-<br></br>
-<a href="https://www.diigo.com/user/autopecasimporta">https://www.diigo.com/user/autopecasimporta</a>
-<br></br>
-<a href="https://autopecasimportado.blogspot.com/">https://autopecasimportado.blogspot.com/</a>
-<br></br>
-<a href="https://autopecasdeimportados.contently.com/">https://autopecasdeimportados.contently.com/</a>
-<br></br>
+      </body>
+      </html>
